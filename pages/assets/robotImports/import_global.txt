@@ -1,0 +1,11 @@
+*** Settings ***
+Documentation    Resource file containing all libraries and resources imported from Python's installation
+
+Library    Selenium2Library
+Library    RequestsLibrary
+Library    String
+Library    DateTime
+Library    Collections
+Library    OperatingSystem
+
+Resource   import_project_dominos.txt

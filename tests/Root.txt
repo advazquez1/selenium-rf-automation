@@ -1,0 +1,4 @@
+*** Settings ***
+Documentation    Resource file containing all libraries
+
+Resource    ../pages/assets/robotImports/import_global.txt

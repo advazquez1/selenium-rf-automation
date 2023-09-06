@@ -1,0 +1,6 @@
+*** Settings ***
+Documentation    Resource file containing all libraries and resource files under the `keywords` folder
+
+Resource    ../../keywords/Dashboard/Dashboard.robot
+Resource    ../../keywords/SignIn/SignInModal.robot
+Resource    ../../keywords/Common/NavMenu.robot

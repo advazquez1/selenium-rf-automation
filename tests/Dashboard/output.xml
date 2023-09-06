@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.2 on win32)" generated="20230906 16:38:01.706" rpa="false" schemaversion="4">
+<suite id="s1" name="Dashboard" source="C:\GitHub\selenium-rf-automation\tests\Dashboard\Dashboard.robot">
+<test id="s1-t1" name="Verify Smart Order Homepage Functionality" line="7">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.dominos.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230906 16:38:01.855" level="INFO">Opening browser 'Chrome' to base url 'https://www.dominos.com/'.</msg>
+<status status="PASS" starttime="20230906 16:38:01.855" endtime="20230906 16:38:05.113"/>
+</kw>
+<kw name="Click Smart Order Button" library="Dashboard">
+<arg>Delivery</arg>
+<doc>Clicks the smart order button
+Options are: Delivery | Carryout</doc>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${CTA_Locator}</var>
+<arg>'${option}' == 'Delivery'</arg>
+<arg>Set Variable</arg>
+<arg>${SmartOrder_Delivery_Btn}</arg>
+<arg>ELSE IF</arg>
+<arg>'${option}' == 'Carryout'</arg>
+<arg>Set Variable</arg>
+<arg>${SmartOrder_Carryout_Btn}</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>Valid option wasn't provided</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Set Variable" library="BuiltIn">
+<arg>${SmartOrder_Delivery_Btn}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" starttime="20230906 16:38:05.114" endtime="20230906 16:38:05.115"/>
+</kw>
+<msg timestamp="20230906 16:38:05.115" level="INFO">${CTA_Locator} = //*[@data-quid='start-your-order-delivery-cta']</msg>
+<status status="PASS" starttime="20230906 16:38:05.114" endtime="20230906 16:38:05.115"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>5</arg>
+<arg>1</arg>
+<arg>Element Should Be Visible</arg>
+<arg>${CTA_Locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${CTA_Locator}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230906 16:38:05.133" level="INFO">Element '//*[@data-quid='start-your-order-delivery-cta']' is displayed.</msg>
+<status status="PASS" starttime="20230906 16:38:05.115" endtime="20230906 16:38:05.133"/>
+</kw>
+<status status="PASS" starttime="20230906 16:38:05.115" endtime="20230906 16:38:05.133"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${CTA_Locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230906 16:38:05.134" level="INFO">Clicking element '//*[@data-quid='start-your-order-delivery-cta']'.</msg>
+<status status="PASS" starttime="20230906 16:38:05.133" endtime="20230906 16:38:05.180"/>
+</kw>
+<status status="PASS" starttime="20230906 16:38:05.114" endtime="20230906 16:38:05.180"/>
+</kw>
+<doc>Verifies the functionality of the smart order: delivery and carryout buttons</doc>
+<tag>dashboard</tag>
+<tag>regression</tag>
+<tag>smart_order</tag>
+<status status="PASS" starttime="20230906 16:38:01.854" endtime="20230906 16:38:05.181"/>
+</test>
+<doc>Dashboard test functionality</doc>
+<status status="PASS" starttime="20230906 16:38:01.707" endtime="20230906 16:38:05.181"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">dashboard</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smart_order</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dashboard">Dashboard</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230906 16:38:01.853" level="WARN">Imported resource file 'C:\GitHub\selenium-rf-automation\pages\keywords\SignIn\SignInModal.robot' is empty.</msg>
+</errors>
+</robot>
