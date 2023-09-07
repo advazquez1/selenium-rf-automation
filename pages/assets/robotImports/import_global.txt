@@ -7,5 +7,3 @@ Library    String
 Library    DateTime
 Library    Collections
 Library    OperatingSystem
-
-Resource   import_project_dominos.txt

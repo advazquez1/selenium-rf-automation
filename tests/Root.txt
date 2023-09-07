@@ -1,4 +1,5 @@
 *** Settings ***
-Documentation    Resource file containing all libraries
+Documentation    Resource file containing all libraries and resources required for `tests`
 
 Resource    ../pages/assets/robotImports/import_global.txt
+Resource    ../pages/assets/robotImports/import_project_dominos.txt

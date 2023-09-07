@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    Top navigation menu page functionality
+Resource    ../Root_Common.txt
 
 *** Variables ***
 ${NavMenu_Logo}=    //*[contains(@aria-labelledby, 'dominos-logo')]
