@@ -3,8 +3,9 @@ Documentation    Dashboard page functionality
 Resource    ../Root.txt
 
 *** Variables ***
-${SmartOrder_Delivery_Btn}=    //*[@data-quid='start-your-order-delivery-cta']
-${SmartOrder_Carryout_Btn}=    //*[@data-quid='start-your-order-carryout-cta']
+${SmartOrder_Delivery_Btn}=             //*[@data-quid='start-your-order-delivery-cta']
+${SmartOrder_Carryout_Btn}=             //*[@data-quid='start-your-order-carryout-cta']
+${SmartOrder_StartYourOrder_Txt}=       //*[text()='Start Your Order']
 
 *** Keywords ***
 Click Smart Order Button

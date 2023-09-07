@@ -4,3 +4,4 @@ Documentation    Resource file containing all libraries and resource files under
 Resource    ../../keywords/Dashboard/Dashboard.robot
 Resource    ../../keywords/SignIn/SignInModal.robot
 Resource    ../../keywords/Common/NavMenu.robot
+Resource    ../../keywords/StoreLocator/StoreLocator.robot
