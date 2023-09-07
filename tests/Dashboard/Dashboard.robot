@@ -7,7 +7,7 @@ Resource    ../Root.txt
 Verify Smart Order Homepage Functionality
     [Documentation]    Verifies the functionality of the smart order: delivery and carryout buttons
     [Tags]    smart_order
-    Open Browser    https://www.dominos.com/    Chrome
+    Open Browser And Load Page
     # Case 2: Delivery
     Click Smart Order Button    Delivery
     Wait Until Keyword Succeeds    5    0.5s    Element Should Be Visible    ${StoreLocator_Header}

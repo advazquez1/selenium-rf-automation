@@ -1,0 +1,6 @@
+*** Settings ***
+Documentation    Resource file containing all libraries and resource files under the `keywords` folder
+
+# Common resources
+Resource    ../../keywords/Common/NavMenu.robot
+Resource    ../../keywords/Common/WebDriverSetup.robot

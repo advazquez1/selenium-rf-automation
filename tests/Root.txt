@@ -3,3 +3,4 @@ Documentation    Resource file containing all libraries and resources required f
 
 Resource    ../pages/assets/robotImports/import_global.txt
 Resource    ../pages/assets/robotImports/import_project_dominos.txt
+Resource    ../pages/assets/robotImports/import_common.txt
