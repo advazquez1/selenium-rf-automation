@@ -2,6 +2,9 @@
 Documentation    Resource file containing all libraries and resource files under the `keywords` folder
 
 # Page Objects
-Resource    ../../keywords/Dashboard/Dashboard.robot
-Resource    ../../keywords/SignIn/SignInModal.robot
-Resource    ../../keywords/StoreLocator/StoreLocator.robot
+Resource    ../../pageObjects/Checkout/Checkout.robot
+Resource    ../../pageObjects/Dashboard/Dashboard.robot
+Resource    ../../pageObjects/OrderMenu/OrderMenu.robot
+Resource    ../../pageObjects/SignIn/SignInModal.robot
+Resource    ../../pageObjects/SignIn/SignUp.robot
+Resource    ../../pageObjects/StoreLocator/StoreLocator.robot

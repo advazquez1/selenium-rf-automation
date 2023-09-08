@@ -5,28 +5,17 @@
             "StreetName": "1010 Westwood Ctr - 1010 Westwood Plaza",
             "StreetNumber": "0",
             "AddressLine2": "UC LA",
-            "UnitType": "#",
+            "UnitNumber": "101",
             "City": "Los Angeles",
             "Region": "CA",
             "PostalCode": "90095",
-            "DeliveryInstructions": null,
             "CampusID": "638",
             "BuildingID": "62512",
-            "Type": "Campus"
+            "Type": "Campus",
+            "CountyName": null,
+            "CountyNumber": null
         },
-        "Coupons": [
-            {
-                "Code": "9222",
-                "Qty": 1,
-                "ID": 3,
-                "IsBelowMinimumOrderAmount": false,
-                "isBelowMinimumCustomerAmount": false,
-                "IsBelowMinimumPaymentAmount": false,
-                "Tags": {
-                    "Hash": "1694065660351"
-                }
-            }
-        ],
+        "Coupons": [],
         "CustomerID": "",
         "Email": "",
         "Extension": "",
@@ -34,13 +23,11 @@
         "LastName": "",
         "LanguageCode": "en",
         "OrderChannel": "OLO",
-        "OrderID": "xIoazmU4qsRwgQf-pVvl",
+        "OrderID": "5GfzZWvnR3O9d_k7T1iq",
         "OrderMethod": "Web",
-        "OrderTaker": null,
         "Payments": [],
         "Phone": "",
         "PhonePrefix": "",
-        "Products": [],
         "ServiceMethod": "Delivery",
         "SourceOrganizationURI": "order.dominos.com",
         "StoreID": "7802",
@@ -49,6 +36,62 @@
         "NoCombine": true,
         "Partners": {},
         "HotspotsLite": false,
-        "OrderInfoCollection": []
-    }
+        "OrderInfoCollection": [],
+        "Currency": "USD",
+        "Promotions": {
+            "Redeemable": [],
+            "Valid": []
+        },
+        "Status": 1,
+        "StatusItems": [
+            {
+                "Code": "AutoAddedOrderId"
+            }
+        ],
+        "metaData": {
+            "PiePassPickup": false,
+            "prop65Warning": true
+        },
+        "Products": [
+            {
+                "ID": 1,
+                "Code": "14SCREEN",
+                "Qty": 1,
+                "CategoryCode": "Pizza",
+                "FlavorCode": "HANDTOSS",
+                "Status": 0,
+                "LikeProductID": 0,
+                "Name": "Large (14\") Hand Tossed Pizza",
+                "IsNew": true,
+                "NeedsCustomization": false,
+                "AutoRemove": false,
+                "Fulfilled": false,
+                "SideOptions": [],
+                "Tags": {},
+                "Options": {
+                    "P": {
+                        "1/1": "1"
+                    }
+                },
+                "descriptions": [
+                    {
+                        "portionCode": "1/1",
+                        "value": "Pepperoni, Robust Inspired Tomato Sauce, Cheese"
+                    }
+                ]
+            }
+        ]
+    },
+    "Status": 1,
+    "Offer": {
+        "CouponList": [],
+        "ProductOffer": ""
+    },
+    "EmailHash": null,
+    "NeedsInStoreProcessing": false,
+    "StatusItems": [
+        {
+            "Code": "Warning"
+        }
+    ]
 }

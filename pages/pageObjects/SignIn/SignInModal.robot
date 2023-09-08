@@ -10,6 +10,7 @@ ${SignIn_SignInOrder_Btn}=     //*[@data-quid='sign-in-button']
 ${SignIn_EmailError}=          //*[@data-quid='error-Email']
 ${SignIn_PasswordError}=       //*[@data-quid='error-Password']
 ${SignIn_Attention_Modal}=     //p[contains(text(), 'could not locate') and contains(text(), 'e-mail and password combination')]
+${SignIn_JoinNow_Btn}=         //*[@data-quid='signin_link']
 
 *** Keywords ***
 Input Email In Sign In Modal
@@ -37,3 +38,8 @@ Fill Email And Password And Click Sign In
     Input Email In Sign In Modal    ${email}
     Input Password In Sign In Modal    ${password}
     Click Sign In For This Order
+
+Click Join Now Button
+    [Documentation]    Clicks on the `Join Now` button
+    Wait Until Keyword Succeeds    5    1    Element Should Be Visible    ${SignIn_JoinNow_Btn}
+    Click Element    ${SignIn_JoinNow_Btn}

@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Store Locator page functionality
-#Resource    ../Root.txt
+Resource    ../Root.txt
 
 *** Variables ***
 ${StoreLocator_Header}=        //*[text()='Store Locator']

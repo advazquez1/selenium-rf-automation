@@ -2,6 +2,7 @@
 Documentation    Resource file containing all libraries and resource files under the `keywords` folder
 
 # Common resources
-Resource    ../../keywords/Common/NavMenu.robot
-Resource    ../../keywords/Common/WebDriverSetup.robot
+Resource    ../../pageObjects/Common/NavMenu.robot
+Resource    ../../pageObjects/Common/WebDriverSetup.robot
+Resource    ../../pageObjects/Common/GenericUpsellContainer.robot
 Resource    ../rest/Rest.robot
