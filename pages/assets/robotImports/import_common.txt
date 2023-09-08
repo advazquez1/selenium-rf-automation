@@ -4,3 +4,4 @@ Documentation    Resource file containing all libraries and resource files under
 # Common resources
 Resource    ../../keywords/Common/NavMenu.robot
 Resource    ../../keywords/Common/WebDriverSetup.robot
+Resource    ../rest/Rest.robot

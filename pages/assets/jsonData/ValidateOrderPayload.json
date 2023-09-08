@@ -1,0 +1,54 @@
+{
+    "Order": {
+        "Address": {
+            "Street": "0 1010 Westwood Ctr - 1010 Westwood Plaza",
+            "StreetName": "1010 Westwood Ctr - 1010 Westwood Plaza",
+            "StreetNumber": "0",
+            "AddressLine2": "UC LA",
+            "UnitType": "#",
+            "City": "Los Angeles",
+            "Region": "CA",
+            "PostalCode": "90095",
+            "DeliveryInstructions": null,
+            "CampusID": "638",
+            "BuildingID": "62512",
+            "Type": "Campus"
+        },
+        "Coupons": [
+            {
+                "Code": "9222",
+                "Qty": 1,
+                "ID": 3,
+                "IsBelowMinimumOrderAmount": false,
+                "isBelowMinimumCustomerAmount": false,
+                "IsBelowMinimumPaymentAmount": false,
+                "Tags": {
+                    "Hash": "1694065660351"
+                }
+            }
+        ],
+        "CustomerID": "",
+        "Email": "",
+        "Extension": "",
+        "FirstName": "",
+        "LastName": "",
+        "LanguageCode": "en",
+        "OrderChannel": "OLO",
+        "OrderID": "xIoazmU4qsRwgQf-pVvl",
+        "OrderMethod": "Web",
+        "OrderTaker": null,
+        "Payments": [],
+        "Phone": "",
+        "PhonePrefix": "",
+        "Products": [],
+        "ServiceMethod": "Delivery",
+        "SourceOrganizationURI": "order.dominos.com",
+        "StoreID": "7802",
+        "Tags": {},
+        "Version": "1.0",
+        "NoCombine": true,
+        "Partners": {},
+        "HotspotsLite": false,
+        "OrderInfoCollection": []
+    }
+}
