@@ -1,0 +1,3 @@
+selenium
+robotframework-requests
+robotframework-selenium2library
