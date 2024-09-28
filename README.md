@@ -1,7 +1,7 @@
 # selenium-rf-automation
 # Overview
 This project is a POC which showcases the use of Python 3+, Selenium, and Robot Framework in a test automation context.
-The primary methodology which will be used for this project is the Page Object Model (POM), a design patter that enhances test script maintainability and re-usability.
+The primary methodology which will be used for this project is the Page Object Model (POM), a design pattern that enhances test script maintainability and re-usability.
 
 For this project, we'll be using Domino's pizza web application as our demo
 https://www.dominos.com/
