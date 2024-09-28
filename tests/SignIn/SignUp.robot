@@ -23,34 +23,39 @@ Verify Functionality For Invalid Sign Up Fields
     Fill Out Sign Up Form    lastName=${LastName}    email=${InvalidEmail}
     ...    confirmEmail=${InvalidEmail}    phone=${Phone}    password=${InvalidPassword}    confirmPassword=${InvalidPassword}
     Click Sign Up Submit Button
-    # assert
+    Page Should Contain    This field is required.
+
     # Case 2: Missing last name
     Fill Out Sign Up Form    firstName=${FirstName}    email=${InvalidEmail}
     ...    confirmEmail=${InvalidEmail}    phone=${Phone}    password=${InvalidPassword}    confirmPassword=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Contain    This field is required.
+
     # Case 3: Missing email
     Fill Out Sign Up Form    firstName=${FirstName}    lastName=${LastName}
     ...    confirmEmail=${InvalidEmail}    phone=${Phone}    password=${InvalidPassword}    confirmPassword=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Contain    Please enter a valid email address.
+    Page Should Contain    This field is required.
+
     # Case 4: Missing confirm email
     Fill Out Sign Up Form    firstName=${FirstName}    lastName=${LastName}    email=${InvalidEmail}
     ...    phone=${Phone}    password=${InvalidPassword}    confirmPassword=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Not Contain    Please enter a valid email address.
+    Page Should Contain    This field is required.
+
     # Case 5: Missing phone number
     Fill Out Sign Up Form    firstName=${FirstName}    lastName=${LastName}    email=${InvalidEmail}
     ...    confirmEmail=${InvalidEmail}    password=${InvalidPassword}    confirmPassword=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Contain    Please enter a valid phone number.
+    Page Should Contain    This field is required.
+
     # Case 6: Missing password
     Fill Out Sign Up Form    firstName=${FirstName}    lastName=${LastName}    email=${InvalidEmail}
     ...    confirmEmail=${InvalidEmail}    phone=${Phone}    confirmPassword=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Contain    Please enter at least 8 characters.
+    Page Should Contain    This field is required.
+
     # Case 7: Missing confirm password
     Fill Out Sign Up Form    firstName=${FirstName}    lastName=${LastName}    email=${InvalidEmail}
     ...    confirmEmail=${InvalidEmail}    phone=${Phone}    password=${InvalidPassword}
-    Click Sign Up Submit Button
-    # assert
+    Page Should Contain    Please enter the same value again.
+    Page Should Contain    This field is required.

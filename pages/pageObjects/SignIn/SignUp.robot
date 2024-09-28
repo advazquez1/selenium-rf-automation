@@ -3,7 +3,7 @@ Documentation    Sign Up page functionality
 Resource    ../Root.txt
 
 *** Variables ***
-${SignUp_RewardsBanner_Title}=        //*[text()='Piece of the Pie']
+${SignUp_RewardsBanner_Title}=        //*[contains(@class, 'loyalty-rewards-with-info-banner')]
 ${SignUp_FirstName_Input}=            //*[@data-quid='signup-form-nameFirst']
 ${SignUp_LastName_Input}=             //*[@data-quid='signup-form-nameLast']
 ${SignUp_Email_Input}=                //*[@data-quid='signup-form-email']
