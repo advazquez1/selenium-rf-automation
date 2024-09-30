@@ -6,6 +6,16 @@ The primary methodology which will be used for this project is the Page Object M
 For this project, we'll be using Domino's pizza web application as our demo
 https://www.dominos.com/
 
+## Tech Stack
+
+| Tool            | Description                                                          |
+|-----------------|----------------------------------------------------------------------|
+| selenium        | A framework for automating web browsers                              |
+| python          | The programming language of choice in this automation project        |
+| robot framework | A testing framework that mainly focuses on a keyword-driven approach |
+| requests        | Python Library for making HTTP requests                              |
+| GitHub Actions  | A CI/CD tool integrated into GitHub                                  |
+
 # Getting Started
 1. Clone the repository to your local machine
 2. Install the required Python packages
